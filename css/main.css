@@ -127,7 +127,7 @@ h1 {
   align-items: center;
 }
 .popUp-window-button__arrow {
-  background-image: url("../../sass/img/expand.jpg");
+  background-image: url("../sass/img/expand.jpg");
   width: 24px;
   height: 24px;
 }
