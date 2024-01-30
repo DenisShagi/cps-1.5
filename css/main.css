@@ -107,25 +107,18 @@ h1 {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: -0.2px;
+  padding: 15px 32px;
 }
 
 .popUp-window {
   background-color: #F8F8F8;
   display: flex;
   row-gap: 16px;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   padding: 24px 32px;
   justify-content: flex-start;
   flex-wrap: wrap;
-}
-@media (max-width: 768px) {
-  .popUp-window {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-  }
 }
 .popUp-window-button {
   padding: 24px 32px;
@@ -146,16 +139,79 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  width: 240px;
+  width: 220px;
   height: 72px;
 }
 @media (max-width: 768px) {
   .popUp-window__block {
     width: 220px;
-    height: 72px;
   }
 }
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 320px) {
+  .popUp-window, .popUp-window-button {
+    display: none;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 150px;
+}
+@media (min-width: 321px) {
+  .swiper {
+    height: 0%;
+  }
+}
+
+.swiper-slide {
+  width: 100%;
+  padding-top: 17px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-slide-next {
+  z-index: 2;
+  margin-left: -50px;
+}
+
+.swiper-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  width: 240px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+}
+@media (min-width: 321px) {
+  .swiper-block {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  --swiper-pagination-bullet-inactive-color: #c9c7c7;
+  --swiper-pagination-color: #B5B6BC;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+}
+@media (min-width: 321px) {
+  .swiper-pagination {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -29,3 +29,11 @@ function toggleText() {
 		text.textContent = 'Показать все'
 	}
 }
+
+
+// swiper
+var swiper = new Swiper('.mySwiper', {
+	pagination: {
+		el: '.swiper-pagination',
+	},
+})
