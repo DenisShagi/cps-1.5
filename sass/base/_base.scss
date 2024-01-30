@@ -1,0 +1,12 @@
+
+html {
+scroll-behavior: smooth;
+margin: 0 auto;
+max-width: $desktop-width;
+}
+body {
+  font-family: $font-main;
+}
+.wrapper {
+  margin: 20px 16px 0;
+}
